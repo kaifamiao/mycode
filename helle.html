@@ -12,9 +12,15 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-        const element = <h1>hello world</h1>
+        const element = (
+            <div>
+                <h1>hello world</h1>
+                <div><h1>在不行，不和你玩了</h1></div>
+            </div>
+        )
         const root = ReactDOM.createRoot(document.getElementById("root"))
         root.render(element)
+
     </script>
 </body>
 </html>
